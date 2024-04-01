@@ -3,10 +3,10 @@ import Matter from "matter-js";
 
 import { styles } from "./styles";
 
-import PIPE_GREEN from "../../assets/images/obstacle-top.png";
-import PIPE_GREEN_INVERTED from "../../assets/images/obstacle-bottom.png";
-import PIPE_ORANGE from "../../assets/images/obstacle2-top.png";
-import PIPE_ORANGE_INVERTED from "../../assets/images/obstacle2-bottom.png";
+import ANCHOR_GREY from "../../assets/images/obstacle-top.png";
+import ANCHOR_GREY_INVERTED from "../../assets/images/obstacle-bottom.png";
+import ANCHOR_GOLD  from "../../assets/images/obstacle2-top.png";
+import ANCHOR_GOLD_INVERTED from "../../assets/images/obstacle2-bottom.png";
 
 const Obstacle = (props) => {
   const widthBody = props.body.bounds.max.x - props.body.bounds.min.x;
@@ -17,13 +17,13 @@ const Obstacle = (props) => {
   return (
     <Image
       source={
-        props.color === "gray"
+        props.color === "grey"
           ? props.isTop
-            ? PIPE_GREEN
-            : PIPE_GREEN_INVERTED
+            ? ANCHOR_GREY
+            : ANCHOR_GREY_INVERTED
           : props.isTop
-          ? PIPE_ORANGE
-          : PIPE_ORANGE_INVERTED
+          ? ANCHOR_GOLD
+          : ANCHOR_GOLD_INVERTED
       }
       style={
         styles({
