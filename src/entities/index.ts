@@ -34,7 +34,7 @@ export default () => {
     ObstacleTop1: Obstacle(
       world,
       'ObstacleTop1',
-      'gray',
+      'grey',
       pipeSizePosA.pipeTop.pos,
       pipeSizePosA.pipeTop.size,
       true
@@ -43,7 +43,7 @@ export default () => {
     ObstacleBottom1: Obstacle(
       world,
       'ObstacleBottom1',
-      'gray',
+      'grey',
       pipeSizePosA.pipeBottom.pos,
       pipeSizePosA.pipeBottom.size,
       false
