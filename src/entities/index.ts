@@ -28,8 +28,8 @@ export default () => {
 
   return {
     physics: { engine, world },
-    Fish: Fish(world, { x: 100, y: 300 }, { height: 60, width: 60 }),
-    Shark: Shark(world, { x: 60, y: 300 }, { height: 100, width: 100 }),
+    Fish: Fish(world, { x: 100, y: 300 }, { height: 45, width: 60 }),
+    Shark: Shark(world, { x: 60, y: 300 }, { height: 45, width: 100 }),
 
     ObstacleTop1: Obstacle(
       world,
